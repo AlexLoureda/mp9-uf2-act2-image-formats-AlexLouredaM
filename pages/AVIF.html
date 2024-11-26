@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <style>
+      /* Animación y sombras en las tarjetas */
+      .image-card {
+        border-radius: 12px;
+        background: #ffffff;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .image-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+      }
+      .image-container {
+        height: 180px;
+        overflow: hidden;
+      }
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .image-info {
+        padding: 15px;
+        color: #333;
+        font-weight: 600;
+        text-align: center;
+      }
+      .image-info p {
+        font-size: 0.85rem;
+        color: #777;
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-600 text-white text-center py-6">
+      <a href="../index.html" class="text-white hover:underline text-lg">
+        &larr; Enrere
+      </a>
+      <h1 class="text-4xl font-semibold mt-2">Image Format Experiment
+        AVIF</h1>
+    </header>
+
+    <main class="container mx-auto p-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div class="image-card">
+        <a href="AVIF1.html">
+          <div class="image-container">
+            <img src="../images/avif1.jpg" alt="Example 1" />
+          </div>
+          <div class="image-info">
+            <span>Img 1</span>
+          </div>
+        </a>
+      </div>
+      <div class="image-card">
+        <a href="AVIF2.html">
+          <div class="image-container">
+            <img src="../images/avif2.jpg" alt="Example 2" />
+          </div>
+          <div class="image-info">
+            <span>Img 2</span>
+          </div>
+        </a>
+      </div>
+      <div class="image-card">
+        <a href="AVIF3.html">
+          <div class="image-container">
+            <img src="../images/avif3.jpg" alt="Example 3" />
+          </div>
+          <div class="image-info">
+            <span>Img 3</span>
+          </div>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
